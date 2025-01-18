@@ -22,4 +22,7 @@
 #echo 'src-git clash https://github.com/lxiaya/onecloud-package' >>feeds.conf.default
 #echo 'src-git dns https://github.com/sbwml/luci-app-mosdns' >>feeds.conf.default
 #echo 'src-git helloworld https://github.com/lxiaya/helloworld' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall;main' >>feeds.conf.default
+echo 'src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages;main' >>feeds.conf.default
+echo 'src-git argon https://github.com/sbwml/luci-theme-argon;openwrt-24.10' >>feeds.conf.default
 echo 'net.netfilter.nf_conntrack_max=65536' >>package/kernel/linux/files/sysctl-nf-conntrack.conf
