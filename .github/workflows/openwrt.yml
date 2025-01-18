@@ -77,15 +77,6 @@ jobs:
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
-    - name: Remove some feeds
-      run: |
-        chmod +x $DIY_P3_SH
-        cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P3_SH
-
-    - name: Second update feed
-      run: cd openwrt && ./scripts/feeds update -a
-
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
